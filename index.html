@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Responsivo Interactivo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <!-- Encabezado / Navegación -->
+    <header class="navbar">
+        <div class="logo">MiProyecto</div>
+        
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menú">
+            ☰
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#inicio">Inicio</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+            <button id="themeToggle" class="btn-theme">🌙</button>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">
+        <h1>Diseño Adaptable e Interactivo</h1>
+        <p>Prueba cambiando el tamaño de la ventana o interactuando con los elementos.</p>
+        <button class="btn-primary" id="btnExplore">Explorar Proyectos</button>
+    </section>
+
+    <!-- Sección de Contenido Responsivo con Filtro -->
+    <main id="proyectos" class="container">
+        <h2>Mis Proyectos</h2>
+        
+        <!-- Filtros interactivos -->
+        <div class="filter-buttons">
+            <button class="btn-filter active" data-filter="all">Todos</button>
+            <button class="btn-filter" data-filter="web">Web</button>
+            <button class="btn-filter" data-filter="app">App</button>
+        </div>
+
+        <!-- Rejilla responsiva (Grid) -->
+        <div class="card-grid">
+            <div class="card" data-category="web">
+                <h3>Portal Web CSS</h3>
+                <p>Sitio construido con HTML5 y Flexbox.</p>
+            </div>
+            <div class="card" data-category="app">
+                <h3>Aplicación Móvil</h3>
+                <p>App desarrollada para iOS y Android.</p>
+            </div>
+            <div class="card" data-category="web">
+                <h3>Dashboard Analytics</h3>
+                <p>Panel interactivo de métricas web.</p>
+            </div>
+            <div class="card" data-category="app">
+                <h3>Juego 2D</h3>
+                <p>Proyecto interactivo en JavaScript.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 MiProyecto. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+</html>
